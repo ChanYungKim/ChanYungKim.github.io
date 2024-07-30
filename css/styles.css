@@ -16,7 +16,7 @@ body {
 ul li {
     list-style: none;
 }
-ul li a {
+.on-this-page {
     position: relative;
     display: block;
     color: transparent;
@@ -26,26 +26,26 @@ ul li a {
     text-decoration: none;
     line-height: 1.2em;
 }
-ul li a:hover {
+.on-this-page:hover {
     color: #fff;
     -webkit-text-stroke: 1px #000;
     transition: 0.5s;
 }
-ul li a:before,
-ul li a:after {
+.on-this-page:before,
+.on-this-page:after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
     transition: 0.5s;
 }
-ul li a:hover:before {
+.on-this-page:hover:before {
     color: #f00;
     z-index: 1;
     -webkit-text-stroke: 1px #000;
     transform: translate(10px, -10px);
 }
-ul li a:hover:after {
+.on-this-page:hover:after {
     color: #0ff;
     z-index: 2;
     -webkit-text-stroke: 1px #000;
