@@ -24,7 +24,7 @@
 .on-this-page ul li a {
     position: relative;
     /* display: block; */
-    color: transparent;
+    color: #000;
     -webkit-text-stroke: 1px #fff;
     font-size: 2em;
     font-weight: 900;
