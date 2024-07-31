@@ -23,8 +23,8 @@
 
 .on-this-page ul li a {
     position: relative;
-    display: block;
-    color: #000;
+    /* display: block; */
+    color: transparent;
     -webkit-text-stroke: 1px #fff;
     font-size: 2em;
     font-weight: 900;
