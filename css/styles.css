@@ -18,23 +18,26 @@
 
 .on-this-page ul li {
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .on-this-page ul li a {
     position: relative;
     display: block;
-    color: transparent;
+    color: #000;
     -webkit-text-stroke: 1px #fff;
     font-size: 2em;
     font-weight: 900;
     text-decoration: none;
     line-height: 1.2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 .on-this-page ul li a:hover {
     color: #fff;
     -webkit-text-stroke: 1px #000;
     transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .on-this-page ul li a:before,
@@ -44,6 +47,7 @@
     top: 0;
     left: 0;
     transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .on-this-page ul li a:hover:before {
@@ -51,6 +55,7 @@
     z-index: 1;
     -webkit-text-stroke: 1px #000;
     transform: translate(10px, -10px);
+    font-family: 'Poppins', sans-serif;
 }
 
 .on-this-page ul li a:hover:after {
@@ -58,4 +63,5 @@
     z-index: 2;
     -webkit-text-stroke: 1px #000;
     transform: translate(20px, -20px);
+    font-family: 'Poppins', sans-serif;
 }
