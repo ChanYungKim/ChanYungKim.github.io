@@ -15,13 +15,11 @@
   position: relative;
 }
 
-#navigation_3_layers_hover_effect:before{
-  content: attr(data-text);
-  position: absolute; 
-}
-
+#navigation_3_layers_hover_effect:before,
 #navigation_3_layers_hover_effect:after{
   content: attr(data-text);
+  top: 0;
+  left: 0;
   position: absolute;
 }
 
@@ -35,7 +33,7 @@
   color: #f00;
   z-index: 1;
   -webkit-text-stroke: 1px #000;
-  transform: translate(5px, -5px);
+  transform: translate(4px, -4px);
   transition: 0.5s;
 }
 
@@ -43,7 +41,7 @@
   color: #0ff;
   z-index: 2;
   -webkit-text-stroke: 1px #000;
-  transform: translate(15px, -15px);
+  transform: translate(8px, -8px);
   transition: 0.5s;
 }
 
