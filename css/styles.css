@@ -11,7 +11,7 @@
   -webkit-text-stroke: 1px #000; /* adding a white black to the text*/
   font-size: 1em;
   font-weight: 900;
-  /* line-height: 1.2em; / / the space between lines of text */
+  /* line-height: 1.2em;*/ /*the space between lines of text */
   position: relative;
 }
 
