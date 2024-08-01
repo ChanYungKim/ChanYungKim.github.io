@@ -19,6 +19,7 @@
 #navigation_3_layers_hover_effect:before,
 #navigation_3_layers_hover_effect:after{
   content: attr(data-text);
+  font-family: 'Poppins', sans-serif;
   top: 0;
   left: 0;
   position: absolute;
