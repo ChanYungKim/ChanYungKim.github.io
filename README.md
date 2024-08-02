@@ -4,7 +4,7 @@
 #### - Dropdown
 
 - CSS
-'''
+```
 .dropdown {
   position: relative;
   display: inline-block;
@@ -46,10 +46,10 @@
 .dropdown-content a:hover {
   background-color: #f1f1f1; /* Change background on hover */
 }
-'''
+```
 
 - HTML
-'''
+```
   <article>
     <div class="dropdown">
       <input type="checkbox" id="dropdownToggle" />
@@ -60,4 +60,4 @@
       </div>
     </div>
   </article>
-'''
+```
