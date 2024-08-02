@@ -6,47 +6,48 @@
   text-decoration: none;
 }
 
-#navigation_3_layers_hover_effect{
-  font-family: 'Poppins', sans-serif;
-  color: transparent;
-  -webkit-text-stroke: 0.35px #000; /* adding a black outline to the text*/
-  font-size: 1.2em;
-  font-weight: 800;
-  /* line-height: 1.2em;*/ /*the space between lines of text */
-  position: relative;
+span {
+  padding-left: 12px;  /* Adjust as needed */
+  padding-right: 12px; /* Adjust as needed */
 }
 
-#navigation_3_layers_hover_effect:before,
-#navigation_3_layers_hover_effect:after{
-  content: attr(data-text);
+.container_navigation_bar {
   font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+#navigation_3_layers_hover_effect_final{
+  color: #fff;
+
+  -webkit-text-stroke: 0.35px #000; /* adding a black outline to the text*/
+  position: relative;
+  display: inline-block;
+}
+
+#navigation_3_layers_hover_effect_final:before{
+  content: attr(data-text);
   top: 0;
   left: 0;
   position: absolute;
 }
 
-#navigation_3_layers_hover_effect:hover {
-  -webkit-text-stroke: 0.35px #000;
-  transition: 0.5s;
+#navigation_3_layers_hover_effect_final:after{
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
-#navigation_3_layers_hover_effect:hover:before {
+#navigation_3_layers_hover_effect_final:hover:before {
   color: #f00;
   z-index: 1;
-  -webkit-text-stroke: 0.35px #000;
-  transform: translate(4px, -4px);
+  transform: translate(1.5px, -1.5px);
   transition: 0.5s;
 }
 
-#navigation_3_layers_hover_effect:hover:after{
+#navigation_3_layers_hover_effect_final:hover:after{
   color: #0ff;
   z-index: 2;
-  -webkit-text-stroke: 0.35px #000;
-  transform: translate(8px, -8px);
+  transform: translate(3px, -3px);
   transition: 0.5s;
-}
-
-span {
-  padding-left: 12px;  /* Adjust as needed */
-  padding-right: 12px; /* Adjust as needed */
 }
