@@ -70,188 +70,61 @@ span {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
-
-.container_cv_main {
+.cv_main {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  background-color: green;
+  padding: 12px 16px;
+  border-radius: 4px;
   height: 100vh;
+  /* border: 10px solid aqua; */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.container_cv_section {
+.panel-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  padding: 2% 10%;
-  background-color: #f00;
-  border: 2px dashed black;
+  flex-direction: column;
+  /* width: 400px; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.item_cv_each_section {
-  background-color: orange;
-  width: 80vw;
-  padding: 2% 2%;
-  border: 2px solid black;
-  position: relative
+.panel {
+  display: flex;
+  flex-direction: column;
 }
 
-.item_cv_each_section::after {
-  font-family: "Material Icons";
-  content: "\e313";
-  font-weight: 800;
-  font-style: none;
-  user-select: none;
-  justify-content: center;
-  transition: transform .5s, color .5s;
-  margin-left: auto;
-  color: #000;
-  padding: 2% 2%;
-  top: 10%;
-  position: relative;
-}
-
-.item_cv_main {
-  flex-grow: 1;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  
-  border: 2px solid black;
-}
-
-.item_cv_content {
-  background-color: #0ff;
-  width: 80vw;
-  height: 10vh;
-  border: 2px solid black;
-}
-
-*, ::after, ::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html, body, ul, ol {
-  margin: 0;
-  padding: 0;
-}
-
-html>body {
-  background-color: #eeeeee;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-text-rendering: optimizeLegibility;
-}
-
-div.panel{
-  max-width: 100%;
-  margin: auto;
-  margin-top: calc(5% - 0px);
-}
-
-details {
-  background:#0ff;
-  font-size:16px;
-  border-bottom:1px solid #e0e0e0;
-  box-shadow:0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);
-  display:flex; 
-}
-
-details div.content{
-  padding:0px 24px 24px 24px;
-}
-
-details[open] summary:after {
-  color:#9e9e9e;
-  content: "expand_less";
-  font-family: 'Material Icons';
-}
-
-details[open]{
-  margin-top:16px;
-  margin-bottom:16px;
-  border:none;
-  border-radius: 2px;
-  /* background-color: #f00; */
-}
-
-details[open]:first-child{
-  margin-top:0;
-  margin-bottom:16px;
-  border:none;
-}
-
-details[open]:last-child{
-  margin-top:16px;
-  margin-bottom:0px;
-  border:none;
-}
-
-/* summary{
-  outline:none;
-  cursor: pointer;
-  padding: 16px 24px;
-  color:#212121;
-  position: relative;
-  font-size: 15px;
-} */
-
-summary:hover{
-  background:#eeeeee;
-}
-
-details[open] summary:hover{
-  background:none;
-}
-
-summary ul {
-  padding-left: 0;
-  list-style: none;
-  display: -webkit-flex;
+.panel-header {
   display: flex;
   align-items: center;
-}
-summary ul li{
-   flex: 1 100%;
-   flex-flow: row wrap;
-}
-
-summary ul li span{
-    display: block;
-    font-size: 12px;
-    margin-top: 6px;
-    opacity: .75;
+  padding: 0px 16px;
+  /* background-color: #f0f0f0; */
+  cursor: pointer;
 }
 
-summary::-webkit-details-marker {
+.panel-content {
+  padding: 0px 16px;
   display: none;
 }
 
-summary::after {
-  content: "expand_more";
-  font-family: 'Material Icons';
-  color: #9e9e9e;
-  font-size: 1.5em;
-  padding: 0;
-  text-align: center;
-  margin-top: 0;
-  position: absolute;
-  top: calc(50% - 12px);
-  bottom: 0;
-  right: 0;
-  width: 6%;
-}  
-
-.titleValue{
-  color: #757575;
+/* ----- quick rotating gear animation ----- */
+.gear-container {
+  display: flex;
+  align-items: center;
 }
 
-time{ color: #757575; opacity: .75; }  
-.list-unstyled { margin-top:15px; padding-left: 0; list-style: none;}
-.list-unstyled li{ margin-bottom:6px; }
+.gear {
+  font-size: 30px;
+  color: #6b6b6b;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
